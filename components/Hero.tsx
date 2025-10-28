@@ -29,7 +29,7 @@ const Hero: React.FC = () => {
             <a href="#projects" className="bg-brand-violet text-white font-semibold py-3 px-6 rounded-lg hover:bg-brand-purple transition-all duration-300 transform hover:scale-105 shadow-lg shadow-purple-500/20">
               Voir mes projets
             </a>
-            <a href={personalInfo.cvUrl} target="_blank" rel="noopener noreferrer" className="border-2 border-brand-light-violet text-brand-light-violet font-semibold py-3 px-6 rounded-lg hover:bg-brand-light-violet hover:text-white transition-all duration-300 transform hover:scale-105">
+            <a href={personalInfo.cvUrl} download target="_blank" rel="noopener noreferrer" className="border-2 border-brand-light-violet text-brand-light-violet font-semibold py-3 px-6 rounded-lg hover:bg-brand-light-violet hover:text-white transition-all duration-300 transform hover:scale-105">
               Télécharger mon CV
             </a>
           </div>
