@@ -25,12 +25,20 @@ const Contact: React.FC = () => {
         <div className="bg-brand-dark-2/40 p-8 rounded-lg shadow-lg border border-gray-800">
           <h3 className="text-2xl font-bold mb-6 text-white">Envoyer un message</h3>
           <form onSubmit={handleSubmit} className="space-y-4">
-            <input type="text" name="name" placeholder="Votre nom" required className="w-full bg-gray-800 border border-gray-700 rounded-md py-2 px-4 focus:outline-none focus:ring-2 focus:ring-brand-violet"/>
-            <input type="email" name="email" placeholder="Votre email" required className="w-full bg-gray-800 border border-gray-700 rounded-md py-2 px-4 focus:outline-none focus:ring-2 focus:ring-brand-violet"/>
-            <textarea name="message" placeholder="Votre message" rows={5} required className="w-full bg-gray-800 border border-gray-700 rounded-md py-2 px-4 focus:outline-none focus:ring-2 focus:ring-brand-violet"></textarea>
-            <button type="submit" className="w-full bg-brand-violet text-white font-semibold py-3 px-6 rounded-lg hover:bg-brand-purple transition-all duration-300 transform hover:scale-105 shadow-lg shadow-purple-500/20">
-              Envoyer
-            </button>
+              {/* Formspree form - posts to Formspree endpoint (no backend required) */}
+              <input type="hidden" name="form-name" value="contact" />
+              {/* Optional honeypot to reduce spam */}
+              <p className="hidden">
+                <label>
+                  Ne pas remplir (spam protection): <input name="_gotcha" />
+                </label>
+              </p>
+              <input type="text" name="name" placeholder="Votre nom" required className="w-full bg-gray-800 border border-gray-700 rounded-md py-2 px-4 focus:outline-none focus:ring-2 focus:ring-brand-violet"/>
+              <input type="email" name="email" placeholder="Votre email" required className="w-full bg-gray-800 border border-gray-700 rounded-md py-2 px-4 focus:outline-none focus:ring-2 focus:ring-brand-violet"/>
+              <textarea name="message" placeholder="Votre message" rows={5} required className="w-full bg-gray-800 border border-gray-700 rounded-md py-2 px-4 focus:outline-none focus:ring-2 focus:ring-brand-violet"></textarea>
+              <button type="submit" className="w-full bg-brand-violet text-white font-semibold py-3 px-6 rounded-lg hover:bg-brand-purple transition-all duration-300 transform hover:scale-105 shadow-lg shadow-purple-500/20">
+                Envoyer
+              </button>
           </form>
         </div>
         <div className="flex flex-col justify-center">
