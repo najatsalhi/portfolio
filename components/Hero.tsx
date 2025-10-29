@@ -1,4 +1,3 @@
-
 import React from 'react';
 import SectionWrapper from './SectionWrapper';
 import TypingAnimation from './TypingAnimation';
@@ -35,14 +34,12 @@ const Hero: React.FC = () => {
           </div>
         </div>
         <div className="md:w-1/2 mt-12 md:mt-0 flex justify-center">
-            <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96">
-                <div className="absolute inset-0 bg-gradient-to-br from-brand-violet to-purple-600 rounded-full blur-2xl opacity-60"></div>
-        <img
-          src="/images/me-pro.jpg"
-          alt="Najat Salhi"
-          className="relative w-full h-full object-cover rounded-full border-4 border-brand-light-violet/50 shadow-2xl"
-        />
-            </div>
+          <form action="https://formspree.io/f/XXXXX" method="POST" className="space-y-4">
+            <input type="text" name="name" placeholder="Votre nom" />
+            <input type="email" name="email" placeholder="Votre email" />
+            <textarea name="message" placeholder="Votre message"></textarea>
+            <button type="submit">Envoyer</button>
+          </form>
         </div>
       </div>
     </SectionWrapper>

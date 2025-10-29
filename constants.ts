@@ -1,4 +1,3 @@
-
 import type { Experience, Project, SkillCategory, Certification, Education } from './types';
 
 export const personalInfo = {
@@ -154,3 +153,10 @@ export const languages: {lang: string, level: string}[] = [
     {lang: "Français", level: "Intermédiaire"},
     {lang: "Arabe", level: "Langue maternelle"},
 ];
+
+<form action="https://formspree.io/f/XXXXX" method="POST" className="space-y-4">
+  <input type="text" name="name" ... />
+  <input type="email" name="email" ... />
+  <textarea name="message" ...></textarea>
+  <button type="submit">Envoyer</button>
+</form>
