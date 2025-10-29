@@ -34,12 +34,10 @@ const Hero: React.FC = () => {
           </div>
         </div>
         <div className="md:w-1/2 mt-12 md:mt-0 flex justify-center">
-          <form action="https://formspree.io/f/XXXXX" method="POST" className="space-y-4">
-            <input type="text" name="name" placeholder="Votre nom" />
-            <input type="email" name="email" placeholder="Votre email" />
-            <textarea name="message" placeholder="Votre message"></textarea>
-            <button type="submit">Envoyer</button>
-          </form>
+          {/* Image / illustration à la place du formulaire (le formulaire est centralisé dans components/Contact.tsx) */}
+          <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden shadow-lg border border-gray-700">
+            <img src="/images/me-pro.jpg" alt="Photo de Najat" className="w-full h-full object-cover" />
+          </div>
         </div>
       </div>
     </SectionWrapper>
